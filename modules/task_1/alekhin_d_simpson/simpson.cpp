@@ -8,7 +8,7 @@ double simpsonMethod(std::vector<std::pair<double, double>> scope,
   if (scope.size() == 0) {
     throw "Error: scope can't be empty!";
   }
-  for (size_t i = 0; i < scope.size(); i++) {
+  for (std::size_t i = 0; i < scope.size(); i++) {
     if (scope[i].first >= scope[i].second) {
       throw "Error: wrong scope interval!";
     }
